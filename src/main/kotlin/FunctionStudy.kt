@@ -24,61 +24,61 @@ fun interface MyInterface {
 }
 
 
-fun main(args: Array<String>) {
-    printHello()
-    add2(10)
-
-    // var interfaceImpl = MyInterface { it.toString() }
-
-    var myImpl = object {
-        override fun method(i: Int?): String {
-            TODO("Not yet implemented")
-        }
-    }
-
-    var myImpl2 = MyFunctionalInterface { i: Int ->
-        println("say something")
-        "Hello " + i
-    }
-
-    var myImpl3 = MyFunctionalInterface { i ->
-        "Hello " + i
-    }
-
-    var myImpl4 = MyFunctionalInterface { "Hello " + it }
-
-    /*
-    JButton b = new JButton("push me");
-    b.addActionListener(new ActionListener() {
-
-        @Override
-        public void actionPerformed(ActionEvent e) {
-            //your actions
-        }
-    });
-    */
-
-    var btn : JButton = JButton("Click")
-    btn.addActionListener {
-
-    }
-
-    var myImpl5 = MyAnotherInterface { i1, i2 ->  "Hello " }
-
-    var myImpl6 = MyAnotherInterface2 { "Hello" }
-
-    var myImpl7 = object {
-        override fun method1(i: Int?): String {
-            return "a"
-        }
-        override fun method2(i: Int?): String {
-            return "a"
-        }
-    }
-
-//    var myImpl = MyFunctionalInterface {
-//        it.toString()
+//fun main(args: Array<String>) {
+//    printHello()
+//    add2(10)
+//
+//    // var interfaceImpl = MyInterface { it.toString() }
+//
+//    var myImpl = object {
+//        override fun method(i: Int?): String {
+//            TODO("Not yet implemented")
+//        }
 //    }
-
-
-}
+//
+//    var myImpl2 = MyFunctionalInterface { i: Int ->
+//        println("say something")
+//        "Hello " + i
+//    }
+//
+//    var myImpl3 = MyFunctionalInterface { i ->
+//        "Hello " + i
+//    }
+//
+//    var myImpl4 = MyFunctionalInterface { "Hello " + it }
+//
+//    /*
+//    JButton b = new JButton("push me");
+//    b.addActionListener(new ActionListener() {
+//
+//        @Override
+//        public void actionPerformed(ActionEvent e) {
+//            //your actions
+//        }
+//    });
+//    */
+//
+//    var btn : JButton = JButton("Click")
+//    btn.addActionListener {
+//
+//    }
+//
+//    var myImpl5 = MyAnotherInterface { i1, i2 ->  "Hello " }
+//
+//    var myImpl6 = MyAnotherInterface2 { "Hello" }
+//
+//    var myImpl7 = object {
+//        override fun method1(i: Int?): String {
+//            return "a"
+//        }
+//        override fun method2(i: Int?): String {
+//            return "a"
+//        }
+//    }
+//
+////    var myImpl = MyFunctionalInterface {
+////        it.toString()
+////    }
+//
+//
+//}
