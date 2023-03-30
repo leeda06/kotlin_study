@@ -39,7 +39,7 @@ fun main(args: Array<String>){
     a.name = "Jack"
     println(a.age)
     println(a.name)
-    a.helloWorld
+   // a.helloWorld
 
 //    var inputStream = File("nonono.txt").inputStream()
 }
